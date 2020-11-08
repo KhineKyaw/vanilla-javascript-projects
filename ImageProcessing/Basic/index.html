@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Processing</h1>
+      <input type="file" accept="image/*" id="fileinput" />
+      <canvas class="canvas" id="canvas" width="0" height="0"></canvas>
+      <div class="toolBox">
+        <label for="red">Red</label>
+        <input type="range" min="-255" max="255" value="0" id="red" />
+        <label for="green">Green</label>
+        <input type="range" min="-255" max="255" value="0" id="green" />
+        <label for="blue">Blue</label>
+        <input type="range" min="-255" max="255" value="0" id="blue" />
+      </div>
+      <div class="toolBox">
+        <label for="brightness">Brightness</label>
+        <input type="range" min="-255" max="255" value="0" id="brightness" />
+        <label for="contrast">Constrast</label>
+        <input type="range" min="-255" max="255" value="0" id="contrast" />
+        <label for="grayscale">Grayscale</label>
+        <input type="checkbox" id="grayscale" />
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
